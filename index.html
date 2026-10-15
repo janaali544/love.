@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love you 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<header class="topbar">
+    <span>‹</span>
+    <b id="topTitle">I love you 💗</b>
+    <span>×</span>
+</header>
+
+<div class="browser-note">
+    I love you 💗
+</div>
+
+<main>
+
+    <!-- صفحة كلمة السر -->
+    <section id="unlockPage" class="page unlock-page">
+        <div class="top-hearts">💗　💕</div>
+
+        <img class="avatar" src="IMG-20261015-WA0009.jpg" alt="صورتنا">
+
+        <div class="hello"> جاهز؟😉 </div>
+
+        <p class="hint"><h1>💗أخويا تيكو💗</h1></p>
+
+        <label for="password">Password</label>
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Enter password"
+            autocomplete="off"
+        >
+
+        <button id="unlockBtn">💕 Unlock 💕</button>
+
+        <p id="error"></p>
+    </section>
+
+    <!-- الصفحة الأولى بعد فتح الموقع -->
+    <section id="introPage" class="page message-page hidden">
+
+        <div class="message-card">
+       <h1>  <p>أخوياا تيييكوووو ❤️</p>   </h1>
+     <h3>    <p class="faded">وربنا بحبك يعم</p>  </h3>
+        <h1> <p>💕أخويا اللي اكتشفت موهبته💕</p> </h1>
+        </div>
+
+        <button class="pink-btn" data-go="letterPage">
+             في اي هنا🫣
+        </button>
+
+        <h3>💕 Lovely 💗</h3>
+
+        <button class="pink-btn" data-go="datePage">
+            نعرف بعض من إمتى؟ 💕
+        </button>
+
+    </section>
+
+        
+            
+    
+    
+            <!-- صفحة الرسالة -->
+    <section id="letterPage" class="page message-page hidden">
+
+        <div class="message-card letter">
+            <!-- زودنا هنا حجم الخط font-size عشان يبقوا حجم الـ h1 -->
+            <div id="typedMessage" style="white-space: pre-line; line-height: 2.2; font-weight: bold; font-size: 26px; min-height: 200px;"></div>
+        </div>
+
+        <button class="pink-btn" data-go="memoriesPage">
+            صورنا 📷    
+        </button>
+
+        <button class="pink-btn" data-go="introPage">
+            رجوع 💗
+        </button>
+
+    </section>
+
+
+
+
+    
+    <!-- صفحة الصور والذكريات -->
+    <section id="memoriesPage" class="page memories-page hidden">
+
+        <h2>ذكرياتنا 💗</h2>
+
+        <div class="memory-grid">
+            <img src="IMG-20261015-WA0005.jpg" alt="ذكرى 1" data-message="حبيبي ❤️">
+            <img src="IMG-20261015-WA0011.jpg" alt="ذكرى 2" data-message="أخويا وسندي 🥹❤️">
+            <img src="IMG-20261015-WA0003(1).jpg" alt="ذكرى 3" data-message="روح قلبي 💗">
+            <img src="IMG-20261015-WA0007.jpg" alt="ذكرى 4" data-message="نور عيني ❤️">
+            <img src="IMG-20261015-WA0010.jpg" alt="ذكرى 5" data-message=" عيش وملح😂 🫶🏻">
+            <img src="IMG-20261015-WA0004.jpg" alt="ذكرى 6" data-message=" نمبر وان ❤️">      
+        </div>
+          
+        <div id="memoryMessage" class="memory-message">
+            اضغط ع الصور 💌    
+        </div>
+
+        <button class="pink-btn" data-go="datePage">
+            سوا سوا من....💕
+        </button>
+
+        <button class="pink-btn" data-go="introPage">
+            رجوع ♡
+        </button>
+
+    </section>
+
+    <!-- صفحة العداد -->
+    <section id="datePage" class="page date-page hidden">
+
+        <h2>💕 صحاب من امتي 💕</h2>
+
+        <p class="date-title">
+            نعرف بعض💗
+            <br>
+            من يوم 20-05-2026
+        </p>
+
+        <div class="date-counter">
+            <div>
+                <b id="d">0</b>
+                <span>يوم</span>
+            </div>
+            <div>
+                <b id="h">0</b>
+                <span>ساعة</span>
+            </div>
+            <div>
+                <b id="m">0</b>
+                <span>دقيقة</span>
+            </div>
+            <div>
+                <b id="s">0</b>
+                <span>ثانية</span>
+            </div>
+        </div>
+
+        <p>كل يوم بيعدّي وإنت معايا أحلى من اللي قبله 💗</p>
+
+        <div class="date-buttons">
+            <button class="pink-btn" data-go="introPage">
+                رجوع ♡
+            </button>
+
+            <button class="pink-btn" data-go="storyPage">
+                اضغط 💌
+            </button>
+        </div>
+
+    </section>
+
+    <!-- صفحة الحكاية -->
+    <section id="storyPage" class="page story-page hidden">
+        <h2>صاحبي 💗</h2>
+        <p class="story-subtitle">ربنا يديمك ليا يحبيب قلبي 🥹</p>
+
+        <div class="story-card special-card">
+            <span class="story-emoji">💌</span>
+            <h3>قولتلي بحبك إمتى؟</h3>
+            <p class="story-date">15 / 10 / 2026</p>
+            <p>وانا بحبك والله يحبيبي ❤️</p>
+        </div>
+
+        <div class="story-card">
+            <span class="story-emoji">❤️</span>
+            <h3>عشرة عمري</h3>
+            <p>💕مش صحبي بس انت اخويا وكل حاجه ليا💕</p>
+        </div>
+
+        <div class="story-card">
+            <span class="story-emoji">🫂</span>
+            <h3>قلب اخوك</h3>
+            <p>💕اخويا اللي الايام ادتهولي💕</p>
+        </div>
+
+        <div class="story-card">
+            <span class="story-emoji">🥹💗</span>
+            <h3>نور عيني</h3>
+            <p>💕حته مني يصحبي💕</p>
+        </div>
+
+        <div class="story-card">
+            <span class="story-emoji">❣️</span>
+            <h3>اخويا تيكو</h3>
+            <p>💕اللي بينا أكبر من كلمة صحاب💕</p>
+        </div>
+
+        <div class="story-card">
+            <span class="story-emoji">😍</span>
+            <h3>سوا سوا للاخر يقلبي</h3>
+            <p>💕يارب نفضل سوا دايما يصحبي💕</p>
+        </div>
+
+                <div class="story-card final-card">
+            <span class="story-emoji">💖</span>
+            <h3>3enba ♡ Tiko</h3>
+            <p></p>
+        </div>
+
+        <div class="date-buttons">
+            <button class="pink-btn" data-go="datePage">رجوع للعداد ♡</button>
+            <button class="pink-btn" data-go="videoPage">اضغط 🎬</button>
+        </div>
+    </section>
+
+
+
+    <!-- صفحة الفيديو الجديدة -->
+    <section id="videoPage" class="page story-page hidden">
+        <h2>شغل الفيديو😂❣️</h2>
+        <p class="story-subtitle">أحلى اللحظات سوا 💗</p>
+
+        <div class="story-card" style="text-align: center;">
+            <span class="story-emoji">🎬</span>
+            <video controls width="100%" style="border-radius: 14px; margin-top: 10px; box-shadow: 0 4px 15px rgba(214, 51, 132, 0.15);">
+                <source src="VID-20261015-WA0299.mp4" type="video/mp4">
+                متصفحك لا يدعم عرض الفيديو
+            </video>
+        </div>
+
+        <button class="pink-btn" data-go="storyPage">رجوع للحكاية ♡</button>
+    </section>
+
+
+</main>
+
+<!-- مشغل الأغنية -->
+<div class="player">
+    <div class="wave">▮▮▮▮▮▮▮</div>
+    <div class="track">
+        <b>أنت حبيبي</b>
+        <small>Tul8te • أنت حبيبي</small>
+        <input id="seek" type="range" min="0" max="100" value="0">
+    </div>
+    <button id="play" aria-label="تشغيل الأغنية">▶</button>
+    <img src="IMG-20261015-WA0008.jpg" alt="غلاف الأغنية" class="cover">
+    <audio id="audio" src="song.mp3" preload="metadata" loop></audio>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
